@@ -1,0 +1,38 @@
+{
+  "name": "@lmts-ds/docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.4.5",
+    "@storybook/addon-interactions": "^7.4.5",
+    "@storybook/addon-links": "^7.4.5",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.4.5",
+    "@storybook/react": "^7.4.5",
+    "@storybook/react-vite": "^7.4.5",
+    "@storybook/testing-library": "^0.2.1",
+    "@vitejs/plugin-react": "^4.1.0",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.4.5",
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "@lmts-ds/react": "*",
+    "@lmts-ds/tokens": "*",
+    "@lmts-ds/ts-config": "*",
+    "@storybook/addon-docs": "^7.4.6",
+    "phosphor-react": "^1.4.1",
+    "polished": "^4.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
