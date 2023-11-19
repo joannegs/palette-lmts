@@ -1,0 +1,21 @@
+{
+  "name": "@lmts-ds/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@lmts-ds/ts-config": "*",
+    "@lmts-ds/eslint-config": "*",
+    "typescript": "^5.2.2",
+    "tsup": "^7.2.0"
+  }
+}
