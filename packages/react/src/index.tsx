@@ -13,3 +13,4 @@ export * from './components/Separator';
 export * from './components/Dialog';
 export * from './components/Loader';
 export * from './components/Badge';
+export * from './components/Spinner';
