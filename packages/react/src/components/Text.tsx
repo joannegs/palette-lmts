@@ -9,7 +9,7 @@ export const Text = styled('span', {
 
     variants:{
         size: {
-            xxs: { fontSize: '$xxs'},
+            xxs:{ fontSize: '$xxs'},
             xs: { fontSize: '$xs'},
             sm: { fontSize: '$sm'},
             md: { fontSize: '$md'},
