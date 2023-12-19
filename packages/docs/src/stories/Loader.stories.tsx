@@ -1,9 +1,9 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Loader, LoaderProps } from '@lmts-ds/react';
+import { PaletteLoader, LoaderProps } from '@lmts-ds/react';
 
 export default {
     title: 'Data display/Loader', 
-    component: Loader, 
+    component: PaletteLoader,
     tags: ['autodocs'],
     args: {
         progress: 10

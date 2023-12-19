@@ -1,7 +1,7 @@
 import { ComponentProps, ReactElement } from 'react';
 import * as DialogComponent from '@radix-ui/react-alert-dialog';
 import { DialogOverlay, DialogContent, DialogTitle, DialogDescription } from './style';
-import { Text } from '../Text';
+import { PaletteText } from '../Text';
 
 export interface DialogProps extends ComponentProps<typeof DialogComponent.Root>{
   title: string, 
@@ -11,7 +11,7 @@ export interface DialogProps extends ComponentProps<typeof DialogComponent.Root>
   actions?: ReactElement[];
 };
 
-export function Dialog ({ triggerComponent, title, description, content }: DialogProps) {
+export function PaletteDialog({ triggerComponent, title, description, content }: DialogProps) {
   return(
     <DialogComponent.Root>
     <DialogComponent.Trigger asChild>
@@ -21,10 +21,10 @@ export function Dialog ({ triggerComponent, title, description, content }: Dialo
       <DialogOverlay />
       <DialogContent>
         <DialogTitle > 
-          <Text size='2xl' color='dark'> { title } </Text>
+          <PaletteText size='2xl' color='dark'> { title } </PaletteText>
         </DialogTitle>
         <DialogDescription>
-          <Text color='md'> { description } </Text>
+          <PaletteText color='md'> { description } </PaletteText>
         </DialogDescription>
         {content}
       </DialogContent>
@@ -34,4 +34,4 @@ export function Dialog ({ triggerComponent, title, description, content }: Dialo
   );
 };
 
-Dialog.displayName = 'Dialog';
+PaletteDialog.displayName = 'PaletteDialog';

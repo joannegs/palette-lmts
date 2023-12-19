@@ -1,9 +1,9 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Text, TextProps } from '@lmts-ds/react';
+import { PaletteText, TextProps } from '@lmts-ds/react';
 
 export default {
     title: 'Typography/Text', 
-    component: Text, 
+    component: PaletteText, 
     tags: ['autodocs'],
     args: {   
         children: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

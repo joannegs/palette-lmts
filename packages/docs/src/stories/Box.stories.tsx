@@ -1,9 +1,9 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Box, BoxProps, Text } from '@lmts-ds/react';
+import { PaletteBox, BoxProps, Text } from '@lmts-ds/react';
 
 export default {
     title: 'Surfaces/Box', 
-    component: Box, 
+    component: PaletteBox, 
     tags: ['autodocs'],
     args: {   
         children: (

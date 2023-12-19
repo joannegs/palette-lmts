@@ -1,7 +1,7 @@
 import { ComponentProps } from "react";
 import { SpinnerContainer,  } from './style';
 
-export function Spinner() {
+export function PaletteSpinner() {
   return (
     <SpinnerContainer>
       {/* <SpinnerIcon /> */}
@@ -11,4 +11,4 @@ export function Spinner() {
 
 export interface SpinnerProps extends ComponentProps<typeof SpinnerContainer> {}
 
-Spinner.displayName = 'Spinner';
+PaletteSpinner.displayName = 'PaletteSpinner';

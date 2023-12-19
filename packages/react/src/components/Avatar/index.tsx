@@ -4,7 +4,7 @@ import { ComponentProps } from 'react';
 
 export interface AvatarProps extends ComponentProps<typeof AvatarImage> {}
 
-export function Avatar(props: AvatarProps) {
+export function PaletteAvatar(props: AvatarProps) {
     return(
         <AvatarContainer>
             <AvatarImage { ...props } />
@@ -15,4 +15,4 @@ export function Avatar(props: AvatarProps) {
     )
 }
 
-Avatar.displayName = 'Avatar';
+PaletteAvatar.displayName = 'PaletteAvatar';

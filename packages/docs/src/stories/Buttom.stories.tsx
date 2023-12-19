@@ -1,10 +1,10 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Button, ButtonProps } from '@lmts-ds/react';
+import { PaletteButton, ButtonProps } from '@lmts-ds/react';
 import { ArrowRight } from 'phosphor-react';
 
 export default {
     title: 'Form/Button', 
-    component: Button, 
+    component: PaletteButton, 
     tags: ['autodocs'],
     args: {   
         children: 'Send'

@@ -1,7 +1,7 @@
 import { styled } from '@stitches/react';
 import { ComponentProps } from 'react';
 
-export const TextArea = styled('textarea', {
+export const PaletteTextArea = styled('textarea', {
     backgroundColor: '$gray900',
     padding: '$3 $4', 
     borderRadius: '$sm',
@@ -25,6 +25,6 @@ export const TextArea = styled('textarea', {
     }
 });
 
-export interface TextAreaProps extends ComponentProps<typeof TextArea> {};
+export interface TextAreaProps extends ComponentProps<typeof PaletteTextArea> {};
 
-TextArea.displayName = 'TextArea';
+PaletteTextArea.displayName = 'PaletteTextArea';

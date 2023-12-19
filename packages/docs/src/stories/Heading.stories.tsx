@@ -1,9 +1,9 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Heading, HeadingProps } from '@lmts-ds/react';
+import { PaletteHeading, HeadingProps } from '@lmts-ds/react';
 
 export default {
     title: 'Typography/Heading', 
-    component: Heading, 
+    component: PaletteHeading, 
     tags: ['autodocs'],
     args: {   
         children: `Custom Title`,

@@ -1,7 +1,7 @@
 import { ComponentProps, ElementType } from "react";
 import { styled } from "../styles";
 
-export const Text = styled('span', {
+export const PaletteText = styled('span', {
     fontFamily: '$default',
     lineHeight: '$base',
     margin: 0,
@@ -35,8 +35,8 @@ export const Text = styled('span', {
     }
 });
 
-export interface TextProps extends ComponentProps<typeof Text> {
+export interface TextProps extends ComponentProps<typeof PaletteText> {
     as?: ElementType;
 };
 
-Text.displayName = 'Text';
+PaletteText.displayName = 'PaletteText';

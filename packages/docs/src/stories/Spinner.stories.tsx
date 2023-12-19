@@ -1,9 +1,9 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Spinner, SpinnerProps, Text } from '@lmts-ds/react';
+import { PaletteSpinner, SpinnerProps, PaletteText } from '@lmts-ds/react';
 
 export default {
     title: 'Data display/Spinner', 
-    component: Spinner, 
+    component: PaletteSpinner, 
     tags: ['autodocs'],
 } as Meta<SpinnerProps>;
 

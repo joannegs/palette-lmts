@@ -1,21 +1,21 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { TextInput, TextInputProps, Box, Text } from '@lmts-ds/react';
+import { PaletteTextInput, TextInputProps, PaletteBox, PaletteText } from '@lmts-ds/react';
 
 export default {
     title: 'Form/Text Input', 
-    component: TextInput, 
+    component: PaletteTextInput, 
     tags: ['autodocs'],
     args: {},
     decorators: [
         (Story) => {
             return (
-                <Box
+                <PaletteBox
                 as="label"
                 css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
                 >
-                    <Text size="sm"> Username </Text>
+                    <PaletteText size="sm"> Username </PaletteText>
                     {Story()}
-                </Box>
+                </PaletteBox>
             )
         }
     ]

@@ -1,21 +1,21 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { TextArea, TextAreaProps, Box, Text } from '@lmts-ds/react';
+import { PaletteTextArea, TextAreaProps, PaletteBox, PaletteText } from '@lmts-ds/react';
 
 export default {
     title: 'Form/Text Area', 
-    component: TextArea, 
+    component: PaletteTextArea, 
     tags: ['autodocs'],
     args: {},
     decorators: [
         (Story) => {
             return (
-                <Box
+                <PaletteBox
                 as="label"
                 css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
                 >
-                    <Text size="sm"> Description </Text>
+                    <PaletteText size="sm"> Description </PaletteText>
                     {Story()}
-                </Box>
+                </PaletteBox>
             )
         }
     ]

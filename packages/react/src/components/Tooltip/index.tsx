@@ -1,9 +1,9 @@
 import { ComponentProps, ReactElement } from "react";
 import * as TooltipComponent from '@radix-ui/react-tooltip';
 import { TooltipContainer, TooltipContent, TooltipArrow } from "./style";
-import { Text } from "../Text";
+import { PaletteText } from "../Text";
 
-export function Tooltip({ triggerComponent, content}: TooltipProps) {
+export function PaletteTooltip({ triggerComponent, content}: TooltipProps) {
   return(
     <TooltipComponent.Provider>
       <TooltipContainer>
@@ -12,7 +12,7 @@ export function Tooltip({ triggerComponent, content}: TooltipProps) {
         </TooltipComponent.Trigger>
         <TooltipComponent.Portal>
           <TooltipContent>
-            <Text size='xs'> { content } </Text>
+            <PaletteText size='xs'> { content } </PaletteText>
             <TooltipArrow />
           </TooltipContent>
         </TooltipComponent.Portal>
@@ -26,4 +26,4 @@ export interface TooltipProps extends ComponentProps<typeof TooltipContainer>{
   content: string
 }
 
-Tooltip.displayName = 'Tooltip';
+PaletteTooltip.displayName = 'PaletteTooltip';

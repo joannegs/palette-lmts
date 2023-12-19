@@ -1,13 +1,13 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Badge, BadgeProps } from '@lmts-ds/react';
+import { PaletteBadge, BadgeProps } from '@lmts-ds/react';
 
 export default {
     title: 'Data Display/Badge', 
-    component: Badge, 
+    component: PaletteBadge, 
     tags: ['autodocs'],
     args: {   
         children: (
-            <Badge color='ignite700'> Bagde </Badge>
+            <PaletteBadge color='ignite700'> Bagde </PaletteBadge>
         )
     }
 } as Meta<BadgeProps>;

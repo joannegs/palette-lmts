@@ -1,9 +1,9 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { MultiStep, MultiStepProps, Box } from '@lmts-ds/react';
+import { PaletteMultistep, MultiStepProps, PaletteBox } from '@lmts-ds/react';
 
 export default {
     title: 'Form/Multi Step', 
-    component: MultiStep, 
+    component: PaletteMultistep, 
     tags: ['autodocs'],
     args: {
         size: 4,
@@ -12,12 +12,12 @@ export default {
     decorators: [
         (Story) => {
             return (
-                <Box
+                <PaletteBox
                 as="label"
                 css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
                 >
                     {Story()}
-                </Box>
+                </PaletteBox>
             )
         }
     ],

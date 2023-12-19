@@ -1,9 +1,9 @@
 import { styled } from "../../styles";
-import { Text } from '../Text';
+import { PaletteText } from '../Text';
 
 export const MultiStepContainer = styled('div', {});
 
-export const Label = styled(Text, {
+export const Label = styled(PaletteText, {
     color: '$gray200',
 
     defaultVariants: {

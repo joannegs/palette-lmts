@@ -1,20 +1,20 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Checkbox, CheckboxProps, Box, Text } from '@lmts-ds/react';
+import { PaletteCheckbox, CheckboxProps, PaletteBox, Text } from '@lmts-ds/react';
 
 export default {
     title: 'Form/Checkbox', 
-    component: Checkbox, 
+    component: PaletteCheckbox, 
     tags: ['autodocs'],
     decorators: [
         (Story) => {
             return (
-                <Box
+                <PaletteBox
                 as="label"
                 css={{ display: 'flex', flexDirection: 'row', gap: '$2' }}
                 >
                     {Story()}
                     <Text size="sm"> Accept Terms of Use </Text>
-                </Box>
+                </PaletteBox>
             )
         }
     ]

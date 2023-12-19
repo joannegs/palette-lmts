@@ -1,9 +1,9 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Separator, SeparatorProps, Text } from '@lmts-ds/react';
+import { PaletteSeparator, SeparatorProps, Text } from '@lmts-ds/react';
 
 export default {
     title: 'Data display/Separator', 
-    component: Separator, 
+    component: PaletteSeparator, 
     tags: ['autodocs'],
 } as Meta<SeparatorProps>;
 

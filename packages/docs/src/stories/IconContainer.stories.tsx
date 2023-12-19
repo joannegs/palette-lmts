@@ -1,17 +1,17 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Icon, IconContainerProps } from '@lmts-ds/react';
+import { PaletteIcon, IconContainerProps } from '@lmts-ds/react';
 
 export default {
     title: 'Data Display/Icon Container', 
-    component: Icon, 
+    component: PaletteIcon, 
     tags: ['autodocs'],
     decorators: [
       () => {
         return (
-          <Icon 
+          <PaletteIcon 
           iconName='add_alarm'
           color='#972e3f'>
-          </Icon>
+          </PaletteIcon>
         )
       }
     ]

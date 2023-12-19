@@ -6,7 +6,7 @@ export interface MultiStepProps extends ComponentProps<typeof MultiStepContainer
     currentStep?: number
 }
 
-export function MultiStep({ size, currentStep = 1 }: MultiStepProps) {
+export function PaletteMultistep({ size, currentStep = 1 }: MultiStepProps) {
     return(
         <MultiStepContainer>
             <Label> 
@@ -24,4 +24,4 @@ export function MultiStep({ size, currentStep = 1 }: MultiStepProps) {
     )
 }
 
-MultiStep.displayName = 'MultiStep';
+PaletteMultistep.displayName = 'PaletteMultistep';

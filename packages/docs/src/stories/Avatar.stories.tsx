@@ -1,9 +1,9 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Avatar, AvatarProps } from '@lmts-ds/react';
+import { PaletteAvatar, AvatarProps } from '@lmts-ds/react';
 
 export default {
     title: 'Data display/Avatar', 
-    component: Avatar, 
+    component: PaletteAvatar, 
     tags: ['autodocs'],
     args: {
         src: 'https://st3.depositphotos.com/2024219/31793/i/450/depositphotos_317939792-stock-photo-young-woman-over-isolated-yellow.jpg',

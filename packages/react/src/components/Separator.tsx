@@ -1,7 +1,7 @@
 import { ComponentProps } from "react";
 import { styled } from "../styles";
 
-export const Separator = styled('div', {
+export const PaletteSeparator = styled('div', {
   backgroundColor: '$gray200',
   borderRadius: '$sm', 
   // height: 0.5,
@@ -25,7 +25,7 @@ export const Separator = styled('div', {
   }
 });
 
-export interface SeparatorProps extends ComponentProps<typeof Separator>{};
+export interface SeparatorProps extends ComponentProps<typeof PaletteSeparator>{};
 
 
-Separator.displayName = 'Separator';
+PaletteSeparator.displayName = 'Separator';

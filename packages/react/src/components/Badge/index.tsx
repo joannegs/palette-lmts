@@ -1,12 +1,12 @@
 import { ComponentProps } from "react";
 import { BadgeBox } from "./styles";
-import { Text } from "../Text";
+import { PaletteText } from "../Text";
 import { colors } from '@lmts-ds/tokens';
 
-export function Badge({ color, textColor, children }: BadgeProps) {
+export function PaletteBadge({ color, textColor, children }: BadgeProps) {
     return(
         <BadgeBox style={{backgroundColor: `${colors[color]}`}}>
-            <Text size='xxs' color={textColor}> { children } </Text>
+            <PaletteText size='xxs' color={textColor}> { children } </PaletteText>
         </BadgeBox>       
     )
 }
@@ -16,4 +16,4 @@ export interface BadgeProps extends ComponentProps<typeof BadgeBox> {
     textColor?: 'light' | 'md' | 'dark'
 }
 
-Badge.displayName = 'Badge';
+PaletteBadge.displayName = 'PaletteBadge';

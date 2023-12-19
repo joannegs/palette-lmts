@@ -6,7 +6,7 @@ export interface TextInputProps extends ComponentProps<typeof Input> {
     disabled?: boolean
 };
 
-export function TextInput({ prefix, ...props }: TextInputProps) {
+export function PaletteTextInput({ prefix, ...props }: TextInputProps) {
     return (
     <TextInputContainer>
         {!!prefix && <Prefix> {prefix} </Prefix>}
@@ -15,4 +15,4 @@ export function TextInput({ prefix, ...props }: TextInputProps) {
     )
 }
 
-TextInput.displayName = 'TextInput';
+PaletteTextInput.displayName = 'PaletteTextInput';

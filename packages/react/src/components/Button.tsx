@@ -1,7 +1,7 @@
 import { ComponentProps, ElementType } from "react";
 import { styled } from "../styles";
 
-export const Button = styled('button', {
+export const PaletteButton = styled('button', {
     all: 'unset',
     borderRadius: '$sm',
     fontSize: '$sm',
@@ -83,8 +83,8 @@ export const Button = styled('button', {
     }
 });
 
-export interface ButtonProps extends ComponentProps<typeof Button> {
+export interface ButtonProps extends ComponentProps<typeof PaletteButton> {
     as?: ElementType;
 };
 
-Button.displayName = 'Button';
+PaletteButton.displayName = 'PaletteButton';

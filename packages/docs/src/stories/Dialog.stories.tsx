@@ -1,26 +1,26 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Dialog, DialogProps, Button, TextInput } from '@lmts-ds/react';
+import { PaletteDialog, DialogProps, PaletteButton, TextInput } from '@lmts-ds/react';
 
 export default {
     title: 'Form/Dialog', 
-    component: Dialog, 
+    component: PaletteDialog, 
     tags: ['autodocs'],
     decorators: [
       () => {
         return (
-          <Dialog title='Edit profile' description="Make changes to your profile here. Click save when you're done."
+          <PaletteDialog title='Edit profile' description="Make changes to your profile here. Click save when you're done."
           triggerComponent={
-            <Button> Hover me </Button>
+            <PaletteButton> Hover me </PaletteButton>
             }
             content={
               <div className='dialog-content'> 
-                <Button> Cancel </Button>
-                <Button variant='secondary'> Cancel </Button>
-                <Button variant='tertiary'> Cancel </Button>
+                <PaletteButton> Cancel </PaletteButton>
+                <PaletteButton variant='secondary'> Cancel </PaletteButton>
+                <PaletteButton variant='tertiary'> Cancel </PaletteButton>
               </div>
             }
             >
-          </Dialog>
+          </PaletteDialog>
         )
       }
     ]
