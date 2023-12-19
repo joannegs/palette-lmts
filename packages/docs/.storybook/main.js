@@ -1,5 +1,5 @@
 import { join, dirname } from "path";
-import { config } from "process";
+import { config as processConfig } from "process"; // Renomeado para evitar colisão
 
 /**
  * This function is used to resolve the absolute path of a package.
@@ -10,7 +10,7 @@ function getAbsolutePath(value) {
 }
 
 /** @type { import('@storybook/react-vite').StorybookConfig } */
-const config = {
+const storybookConfig = { // Renomeado para evitar colisão
   stories: [
     "../src/pages/**/*.stories.mdx",
     "../src/stories/**/*.stories.tsx",
@@ -32,6 +32,8 @@ const config = {
     if (configType === 'PRODUCTION') {
       config.base = '/palette-lmts/'; 
     }
+
+    return config;
   }
 };
-export default config;
+export default storybookConfig; // Renomeado para evitar colisão
